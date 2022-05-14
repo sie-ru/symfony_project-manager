@@ -227,4 +227,21 @@ class Task
 
         return $this;
     }
+
+    public function isIsCompleted(): ?bool
+    {
+        return $this->is_completed;
+    }
+
+    public function getProject(): ?Project
+    {
+        return $this->project;
+    }
+
+    public function setProject(?Project $project): self
+    {
+        $this->project = $project;
+
+        return $this;
+    }
 }
